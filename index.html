@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find your next happy place at ColorMyBook: inspiring books for curious minds.">
+  <meta name="theme-color" content="#fff8ed">
+  <title>ColorMyBook — Find your happy place</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="ColorMyBook home">
+        <span class="brand-mark" aria-hidden="true">✿</span>
+        <span>Color<span class="brand-accent">MyBook</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#books">Browse books</a>
+        <a href="#footer">About us</a>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-button" id="cart-button" type="button" aria-label="Shopping cart, 0 items" aria-describedby="cart-status">
+          <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+            <path d="M3 4h2l2.2 10.1a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 1.9-1.4L21 8H6"></path>
+            <circle cx="10" cy="20" r="1.4"></circle>
+            <circle cx="18" cy="20" r="1.4"></circle>
+          </svg>
+          <span class="cart-count" id="cart-count" aria-hidden="true">0</span>
+        </button>
+        <span class="cart-total" aria-label="Cart total">Total: <span id="cart-total">$0.00</span></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">A little color goes a long way</p>
+        <h1 id="hero-title">Find your next <span>happy place.</span></h1>
+        <p class="hero-description">Books to inspire your mind, spark your creativity, and make your everyday a little brighter.</p>
+        <a class="button" href="#books">Explore the collection <span aria-hidden="true">→</span></a>
+        <p class="hero-note"><span class="hero-sparkle" aria-hidden="true">✦</span> Good reads. Great moods. Your kind of color.</p>
+      </div>
+      <div class="hero-art" role="img" aria-label="A colorful stack of books with cheerful flower decorations">
+        <span class="hero-sun" aria-hidden="true"></span>
+        <span class="hero-flower flower-one" aria-hidden="true">✿</span>
+        <span class="hero-flower flower-two" aria-hidden="true">✿</span>
+        <div class="book-stack" aria-hidden="true">
+          <div class="stack-book stack-book-back"></div>
+          <div class="stack-book stack-book-middle"></div>
+          <div class="stack-book stack-book-front"><span>MAKE<br>ROOM FOR<br>GOOD THINGS</span></div>
+        </div>
+        <span class="hero-doodle" aria-hidden="true">✦</span>
+      </div>
+    </section>
+
+    <section class="perks" aria-label="Why shop ColorMyBook">
+      <p><span aria-hidden="true">♡</span> Handpicked favorites</p>
+      <p><span aria-hidden="true">✿</span> Made for curious minds</p>
+      <p><span aria-hidden="true">↗</span> A happier kind of downtime</p>
+    </section>
+
+    <section class="books-section" id="books" aria-labelledby="books-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Your next great read</p>
+          <h2 id="books-title">A shelf full of <span>good ideas</span></h2>
+        </div>
+        <a class="text-link" href="#books">See the collection <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="book-grid">
+        <article class="book-card">
+          <div class="book-art" role="img" aria-label="Illustrated coral book cover for Word Power Made Easy">
+            <div class="cover cover-word"><span class="cover-decoration" aria-hidden="true">Aa</span><span class="cover-title">Word Power<br>Made Easy</span><span class="cover-author">Norman Lewis</span></div>
+          </div>
+          <div class="book-info">
+            <p class="book-category">Words &amp; learning</p>
+            <h3>Word Power Made Easy</h3>
+            <p class="book-author">Norman Lewis</p>
+            <div class="book-buy"><span class="book-price">$12.99</span><button class="button button-small color-button" type="button" data-book="Word Power Made Easy">Color Now</button></div>
+          </div>
+        </article>
+
+        <article class="book-card">
+          <div class="book-art" role="img" aria-label="Illustrated blue book cover for Think Like a Monk">
+            <div class="cover cover-monk"><span class="cover-decoration" aria-hidden="true">☼</span><span class="cover-title">Think Like<br>a Monk</span><span class="cover-author">Jay Shetty</span></div>
+          </div>
+          <div class="book-info">
+            <p class="book-category">Mindfulness</p>
+            <h3>Think Like a Monk</h3>
+            <p class="book-author">Jay Shetty</p>
+            <div class="book-buy"><span class="book-price">$16.50</span><button class="button button-small color-button" type="button" data-book="Think Like a Monk">Color Now</button></div>
+          </div>
+        </article>
+
+        <article class="book-card">
+          <div class="book-art" role="img" aria-label="Illustrated green book cover for Bad Habits">
+            <div class="cover cover-bad-habits"><span class="cover-decoration" aria-hidden="true">✿</span><span class="cover-title">Bad<br>Habits</span><span class="cover-author">A ColorMyBook Original</span></div>
+          </div>
+          <div class="book-info">
+            <p class="book-category">Personal growth</p>
+            <h3>Bad Habits</h3>
+            <p class="book-author">A ColorMyBook original</p>
+            <div class="book-buy"><span class="book-price">$13.25</span><button class="button button-small color-button" type="button" data-book="Bad Habits">Color Now</button></div>
+          </div>
+        </article>
+
+        <article class="book-card">
+          <div class="book-art" role="img" aria-label="Illustrated deep green book cover for The Psychology of Money">
+            <div class="cover cover-money"><span class="cover-decoration" aria-hidden="true">$</span><span class="cover-title">The Psychology<br>of Money</span><span class="cover-author">Morgan Housel</span></div>
+          </div>
+          <div class="book-info">
+            <p class="book-category">Money &amp; life</p>
+            <h3>The Psychology of Money</h3>
+            <p class="book-author">Morgan Housel</p>
+            <div class="book-buy"><span class="book-price">$14.25</span><button class="button button-small color-button" type="button" data-book="The Psychology of Money">Color Now</button></div>
+          </div>
+        </article>
+
+        <article class="book-card">
+          <div class="book-art" role="img" aria-label="Illustrated golden book cover for Ikigai">
+            <div class="cover cover-ikigai"><span class="cover-decoration" aria-hidden="true">☀</span><span class="cover-title">Ikigai</span><span class="cover-author">Héctor García &amp; Francesc Miralles</span></div>
+          </div>
+          <div class="book-info">
+            <p class="book-category">Wellbeing</p>
+            <h3>Ikigai</h3>
+            <p class="book-author">Héctor García &amp; Francesc Miralles</p>
+            <div class="book-buy"><span class="book-price">$13.75</span><button class="button button-small color-button" type="button" data-book="Ikigai">Color Now</button></div>
+          </div>
+        </article>
+
+        <article class="book-card">
+          <div class="book-art" role="img" aria-label="Illustrated terracotta book cover for The Alchemist">
+            <div class="cover cover-alchemist"><span class="cover-decoration" aria-hidden="true">✦</span><span class="cover-title">The<br>Alchemist</span><span class="cover-author">Paulo Coelho</span></div>
+          </div>
+          <div class="book-info">
+            <p class="book-category">Fiction &amp; wonder</p>
+            <h3>The Alchemist</h3>
+            <p class="book-author">Paulo Coelho</p>
+            <div class="book-buy"><span class="book-price">$11.50</span><button class="button button-small color-button" type="button" data-book="The Alchemist">Color Now</button></div>
+          </div>
+        </article>
+      </div>
+      <p class="status-message" id="cart-status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">✿</span><span>Color<span class="brand-accent">MyBook</span></span></a>
+    <p>Read a little. Dream a lot. Add color everywhere.</p>
+    <nav class="footer-nav" aria-label="Footer navigation"><a href="#books">Browse books</a><a href="#top">Back to top</a></nav>
+    <small>&copy; 2026 ColorMyBook. Made for brighter days.</small>
+  </footer>
+
+</body>
+</html>
